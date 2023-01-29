@@ -118,6 +118,8 @@ void pole(int ball_x, int ball_y) {  //выстраивание поле
                 if ((y == 1) && (x == 38)) {  //выставления счета
                     printf("%d||%d", sc1, sc2);
                     x = x + 4;
+                    if (sc1 > 9) x++;
+                    if (sc2 > 9) x++;
                 }
 
                 if (((x == 76) && (y == rocket_r - 1 || y == rocket_r || y == rocket_r + 1)) ||
