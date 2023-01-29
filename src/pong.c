@@ -120,9 +120,9 @@ void pole(int ball_x, int ball_y) {  //выстраивание поле
                     x = x + 4;
                 }
 
-                if ((x == 76) && (y == rocket_r - 1 || y == rocket_r || y == rocket_r + 1) ||
-                    (x == 3) && (y == rocket_l - 1 || y == rocket_l ||
-                                 y == rocket_l + 1)) {  //построенние правной и левой ракетки
+                if (((x == 76) && (y == rocket_r - 1 || y == rocket_r || y == rocket_r + 1)) ||
+                    ((x == 3) && (y == rocket_l - 1 || y == rocket_l ||
+                                  y == rocket_l + 1))) {  //построенние правной и левой ракетки
                     printf("|");
                 } else {
                     if ((y <= 0) || (y >= height - 1))  //поле
