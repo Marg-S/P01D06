@@ -26,6 +26,8 @@ int main() {
 		ball_x = coordinate_x(ball_x, ball_y);
 		//if (ball_x == 2) win right
 		//if (ball_x == 78) win left
+		//sadasd
+		
 
 		ball_y = coordinate_y(ball_y);
 
